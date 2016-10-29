@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct 28 16:56:51 2016
+
+@author: Abdullah A. Alam
+"""
+
 def get_length(dna):
     """ (str) -> int
 
@@ -8,7 +15,8 @@ def get_length(dna):
     >>> get_length('ATCG')
     4
     """
-    print(len(dna))
+    return(len(dna))
+
 
 
 def is_longer(dna1, dna2):
@@ -22,11 +30,11 @@ def is_longer(dna1, dna2):
     >>> is_longer('ATCG', 'ATCGGA')
     False
     """
-    if (dna1 > dna2):
-        print(True)
+    if dna1 > dna2:
+        return True
     else:
-        print(False)
-    
+        return False
+
 
 
 def count_nucleotides(dna, nucleotide):
@@ -39,7 +47,7 @@ def count_nucleotides(dna, nucleotide):
     >>> count_nucleotides('ATCTA', 'G')
     0
     """
-
+    return(dna.count(nucleotide))
 
 
 def contains_sequence(dna1, dna2):
@@ -54,3 +62,6 @@ def contains_sequence(dna1, dna2):
     False
 
     """
+    return(dna2 in dna1)
+    
+
